@@ -9,18 +9,28 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensures content is spaced out with the footer at the bottom */
+            justify-content: center; /* Center the content vertically */
             align-items: center;
-            min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
             margin: 0;
-            background-color: #1E1E1E; /* Match background color */
+            background-color: #000; /* Black background */
             font-family: 'Roboto', sans-serif;
             color: #fff; /* White text color */
         }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1; /* This allows the content area to expand to fill the space */
+            justify-content: center; /* Center content vertically within the content area */
+        }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         footer {
             text-align: center;
             padding: 10px 0;
@@ -36,7 +46,9 @@
     </style>
 </head>
 <body>
-    <img src="mendeleev_image.png" alt="Mendeleev Capital" class="logo">
+    <div class="content">
+        <img src="mendeleev_image.png" alt="Mendeleev Capital" class="logo">
+    </div>
     <footer>
         <p>jag@mendeleevcapital.com</p>
         <p>&copy; 2024 Mendeleev Capital. All rights reserved.</p>
