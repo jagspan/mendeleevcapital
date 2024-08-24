@@ -9,12 +9,12 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* Ensures content is spaced out with the footer at the bottom */
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensures the body takes at least the full viewport height */
             margin: 0;
-            background-color: #1E1E1E; /* Match the background color to the image */
-            font-family: 'Roboto', sans-serif; /* Use the new Google Font */
+            background-color: #1E1E1E; /* Match background color */
+            font-family: 'Roboto', sans-serif;
             color: #fff; /* White text color */
         }
         img {
@@ -22,8 +22,9 @@
             height: auto;
         }
         footer {
-            margin-top: 20px;
             text-align: center;
+            padding: 10px 0;
+            width: 100%;
         }
 
         /* Media Query for Desktop */
@@ -42,15 +43,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
